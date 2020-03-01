@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.meal-details, .charge-details, .earning-details, .buttons {
+    display: table;
+}
+
+.meal-price, .tax-rate, .tip-percentage, .subtotal, .tip, .total, .tip-total, .meal-count, .avg-tip-per-meal, .buttons {
+    display: table-row;
+}
+
+label, .subtotal .title, .tip .title, .total .title, .tip-total .title, .meal-count .title, .avg-tip-per-meal .title{
+    display: table-cell;
+    text-align: right;
+}
+
+input, .subtotal .number, .tip .number, .total .number, .tip-total .number, .meal-count .number, .avg-tip-per-meal .number {
+    display: table-cell;
+    padding-left: 15px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.customer-charges {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.charge-details {
+    display: table;
+}
+
+.earning-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#reset {
+    float: right;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waitstaff Calculator</title>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <main>
+        <h1>WaitStaff Calculator</h1>
+        <div class="container">
+            <div class="details">
+                <h2>Enter the Meal Details</h2>
+                <form class="meal-details">
+                    <div class="meal-price">
+                        <label for="meal-price">Base Meal Price: $</label>
+                        <input type="number" name="price" placeholder="9.99" id="meal-price" required/>
+                    </div>
+                    <div class="tax-rate">
+                        <label for="tax-rate">Tax Rate: %</label>
+                        <input type="number" name="tax_rate" id="tax-rate" required/>
+                    </div>
+                    <div class="tip-percentage">
+                        <label for="tip-percentage">Tip Percentage: %</label>
+                        <input type="number" name="tip-percentage" id="tip-percentage" required>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" name="submit" id="submit">Submit</button>
+                        <button type="submit" name="cancel" id="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div class="small-contianer">
+                <div class="customer-charges">
+                    <h2>Customer Charges</h2>
+                    <div class="charge-details">
+                        <div class="subtotal">
+                            <h4 class="title">Subtotal</h4>
+                            <h4 class="number">0.00</h4>
+                        </div> 
+                        <div class="tip">
+                            <h4 class="title">Tip</h4>
+                            <h4 class="number">0.00</h4>
+                        </div>
+                        <div class="total">
+                            <h4 class="title">Total</h4>
+                            <h4 class="number">0.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="earning-info">
+                    <h2>My Earnings Info</h2>
+                    <div class="earning-details">
+                        <div class="tip-total">
+                            <h4 class="title">Tip Total:</h4>
+                            <h4 class="number">0.00</h4>
+                        </div>
+                        <div class="meal-count">
+                            <h4 class="title">Meal Count:</h4>
+                            <h4 class="number">0</h4>
+                        </div>
+                        <div class="avg-tip-per-meal">
+                            <h4 class="title">Average Tip Per Meal:</h4>
+                            <h4 class="number">0.00</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" name="reset" id="reset">Reset</button>
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
